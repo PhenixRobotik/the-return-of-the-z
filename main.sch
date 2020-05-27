@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4200 2000 2150 2550
+U 5ECEE5E8
+F0 "f3" 50
+F1 "f3.sch" 50
+F2 "TMS" I L 4200 2400 50 
+F3 "TCK" I L 4200 2500 50 
+F4 "nrst" I L 4200 2700 50 
+F5 "CAN_TX" I L 4200 3350 50 
+F6 "CAN_RX" I L 4200 3450 50 
+F7 "TX_1" I L 4200 2100 50 
+F8 "RX_1" I L 4200 2200 50 
+F9 "DIR" I R 6350 2100 50 
+F10 "TX_AX" I R 6350 2200 50 
+F11 "RX_AX" I R 6350 2300 50 
+$EndSheet
+$Sheet
+S 1650 3200 950  850 
+U 5ECF49A0
+F0 "CAN" 50
+F1 "CAN.sch" 50
+F2 "RX_CAN" I R 2600 3450 50 
+F3 "TX_CAN" I R 2600 3350 50 
+F4 "+7V_CAN" I R 2600 3950 50 
+F5 "+3V3" I R 2600 3600 50 
+F6 "+5V" I R 2600 3700 50 
+F7 "NRST" I R 2600 3250 50 
+$EndSheet
+$Sheet
+S 1350 5100 1650 1300
+U 5ECFB103
+F0 "power_regul" 50
+F1 "power_regul.sch" 50
+$EndSheet
+$Sheet
+S 7200 2000 1150 600 
+U 5ED0491B
+F0 "AX12" 50
+F1 "AX12.sch" 50
+F2 "DIR" I L 7200 2100 50 
+F3 "TX" I L 7200 2200 50 
+F4 "RX" I L 7200 2300 50 
+F5 "AX_power" I L 7200 2500 50 
+$EndSheet
+$Sheet
+S 7200 4150 1200 700 
+U 5ED04940
+F0 "pump" 50
+F1 "pump.sch" 50
+$EndSheet
+$Comp
+L PhenixRobotik:Conn_Debug J?
+U 1 1 5ED799BF
+P 2700 2300
+F 0 "J?" H 2930 2197 50  0000 L CNN
+F 1 "Conn_Debug" H 2930 2288 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 3100 1000 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+	1    2700 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED7A5FD
+P 2700 1700
+F 0 "#PWR?" H 2700 1450 50  0001 C CNN
+F 1 "GND" H 2705 1527 50  0000 C CNN
+F 2 "" H 2700 1700 50  0001 C CNN
+F 3 "" H 2700 1700 50  0001 C CNN
+	1    2700 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 3350 2600 3350
+Wire Wire Line
+	2600 3450 4200 3450
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ED7BC21
+P 2600 3600
+F 0 "#PWR?" H 2600 3450 50  0001 C CNN
+F 1 "+3.3V" V 2615 3728 50  0000 L CNN
+F 2 "" H 2600 3600 50  0001 C CNN
+F 3 "" H 2600 3600 50  0001 C CNN
+	1    2600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5ED7C081
+P 2600 3700
+F 0 "#PWR?" H 2600 3550 50  0001 C CNN
+F 1 "+5V" V 2615 3828 50  0000 L CNN
+F 2 "" H 2600 3700 50  0001 C CNN
+F 3 "" H 2600 3700 50  0001 C CNN
+	1    2600 3700
+	0    1    1    0   
+$EndComp
+NoConn ~ 2600 3950
+$Sheet
+S 3150 2550 950  400 
+U 5ED7CF04
+F0 "reset_logic" 50
+F1 "reset_logic.sch" 50
+F2 "Reset_1" I L 3150 2700 50 
+F3 "Reset_2" I L 3150 2850 50 
+F4 "Reset_MCU" I R 4100 2700 50 
+$EndSheet
+Wire Wire Line
+	4200 2700 4100 2700
+Wire Wire Line
+	3150 2700 3000 2700
+Wire Wire Line
+	3000 2500 4200 2500
+Wire Wire Line
+	3000 2400 4200 2400
+Wire Wire Line
+	3000 2200 4200 2200
+Wire Wire Line
+	3000 2100 4200 2100
+Wire Wire Line
+	2600 3250 3000 3250
+Wire Wire Line
+	3000 3250 3000 2850
+Wire Wire Line
+	3000 2850 3150 2850
+Wire Wire Line
+	7200 2100 6350 2100
+Wire Wire Line
+	6350 2200 7200 2200
+Wire Wire Line
+	6350 2300 7200 2300
+$Sheet
+S 7200 2900 1150 950 
+U 5ED04904
+F0 "stepper" 50
+F1 "stepper.sch" 50
+$EndSheet
+$EndSCHEMATC
