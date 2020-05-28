@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,383 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 2750 3150 0    50   Input ~ 0
+PUMP_POWER
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 5ED1F564
+P 2900 4200
+F 0 "Q?" H 3104 4246 50  0000 L CNN
+F 1 "IRF540N" H 3104 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3150 4125 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2900 4200 50  0001 L CNN
+	1    2900 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 2950 2950 0    50   ~ 0
+12V ?\n20V max\n
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5ED232C2
+P 3500 3750
+F 0 "J?" H 3580 3742 50  0000 L CNN
+F 1 "P0" H 3580 3651 50  0000 L CNN
+F 2 "" H 3500 3750 50  0001 C CNN
+F 3 "~" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5ED2341E
+P 5100 3750
+F 0 "J?" H 5180 3742 50  0000 L CNN
+F 1 "V0" H 5180 3651 50  0000 L CNN
+F 2 "" H 5100 3750 50  0001 C CNN
+F 3 "~" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q?
+U 1 1 5ED2398D
+P 4500 4200
+F 0 "Q?" H 4704 4246 50  0000 L CNN
+F 1 "IRF540N" H 4704 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4750 4125 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4500 4200 50  0001 L CNN
+	1    4500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5ED2630C
+P 3000 3750
+F 0 "D?" V 2954 3830 50  0000 L CNN
+F 1 "D_ALT" V 3045 3830 50  0000 L CNN
+F 2 "" H 3000 3750 50  0001 C CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_ALT D?
+U 1 1 5ED26BBB
+P 4600 3750
+F 0 "D?" V 4554 3830 50  0000 L CNN
+F 1 "D_ALT" V 4645 3830 50  0000 L CNN
+F 2 "" H 4600 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3600 4900 3600
+Wire Wire Line
+	4900 3600 4900 3750
+Wire Wire Line
+	4900 3850 4900 3900
+Wire Wire Line
+	4900 3900 4600 3900
+Wire Wire Line
+	4600 4000 4600 3900
+Connection ~ 4600 3900
+Wire Wire Line
+	3000 4000 3000 3900
+Wire Wire Line
+	3300 3850 3300 3900
+Wire Wire Line
+	3300 3900 3000 3900
+Connection ~ 3000 3900
+Wire Wire Line
+	3000 3600 3300 3600
+Wire Wire Line
+	3300 3600 3300 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5ED27D9C
+P 3000 4400
+F 0 "#PWR?" H 3000 4150 50  0001 C CNN
+F 1 "GND" H 3005 4227 50  0000 C CNN
+F 2 "" H 3000 4400 50  0001 C CNN
+F 3 "" H 3000 4400 50  0001 C CNN
+	1    3000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED2808F
+P 4600 4400
+F 0 "#PWR?" H 4600 4150 50  0001 C CNN
+F 1 "GND" H 4605 4227 50  0000 C CNN
+F 2 "" H 4600 4400 50  0001 C CNN
+F 3 "" H 4600 4400 50  0001 C CNN
+	1    4600 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3150 3000 3150
+Wire Wire Line
+	4600 3150 4600 3600
+Connection ~ 4600 3600
+Wire Wire Line
+	3000 3600 3000 3300
+Connection ~ 3000 3600
+Connection ~ 3000 3150
+Wire Wire Line
+	3000 3150 4600 3150
+$Comp
+L Driver_FET:MC34152 U?
+U 1 1 5ED2A7B9
+P 1850 4300
+F 0 "U?" H 1850 4881 50  0000 C CNN
+F 1 "MC34152" H 1850 4790 50  0000 C CNN
+F 2 "" H 1850 4000 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MC34152-D.PDF" H 1850 4000 50  0001 C CNN
+	1    1850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4200 2700 4200
+Wire Wire Line
+	2250 4400 2650 4400
+Wire Wire Line
+	2650 4400 2650 4650
+Wire Wire Line
+	2650 4650 4300 4650
+Wire Wire Line
+	4300 4650 4300 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5ED2BBB4
+P 1850 4700
+F 0 "#PWR?" H 1850 4450 50  0001 C CNN
+F 1 "GND" H 1855 4527 50  0000 C CNN
+F 2 "" H 1850 4700 50  0001 C CNN
+F 3 "" H 1850 4700 50  0001 C CNN
+	1    1850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED2BFF0
+P 1550 3700
+F 0 "C?" V 1298 3700 50  0000 C CNN
+F 1 "10n" V 1389 3700 50  0000 C CNN
+F 2 "" H 1588 3550 50  0001 C CNN
+F 3 "~" H 1550 3700 50  0001 C CNN
+	1    1550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED2C492
+P 1400 3700
+F 0 "#PWR?" H 1400 3450 50  0001 C CNN
+F 1 "GND" V 1405 3572 50  0000 R CNN
+F 2 "" H 1400 3700 50  0001 C CNN
+F 3 "" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 3300 3000 3300
+Connection ~ 3000 3300
+Wire Wire Line
+	3000 3300 3000 3150
+Wire Wire Line
+	1850 3300 1850 3700
+Wire Wire Line
+	1700 3700 1850 3700
+Connection ~ 1850 3700
+Wire Wire Line
+	1850 3700 1850 3900
+Text HLabel 1450 4200 0    50   Input ~ 0
+P0
+Text HLabel 1450 4400 0    50   Input ~ 0
+V0
+$Comp
+L Sensor_Pressure:MPXA6115A U?
+U 1 1 5ED45D58
+P 2850 5700
+F 0 "U?" H 2421 5746 50  0000 R CNN
+F 1 "MPXA6115A" H 2421 5655 50  0000 R CNN
+F 2 "" H 2350 5350 50  0001 C CNN
+F 3 "http://www.nxp.com/files/sensors/doc/data_sheet/MPXA6115A.pdf" H 2850 6300 50  0001 C CNN
+	1    2850 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5ED47B0A
+P 2850 5300
+F 0 "#PWR?" H 2850 5150 50  0001 C CNN
+F 1 "+5V" H 2865 5473 50  0000 C CNN
+F 2 "" H 2850 5300 50  0001 C CNN
+F 3 "" H 2850 5300 50  0001 C CNN
+	1    2850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED48153
+P 2550 5350
+F 0 "C?" V 2298 5350 50  0000 C CNN
+F 1 "100n" V 2389 5350 50  0000 C CNN
+F 2 "" H 2588 5200 50  0001 C CNN
+F 3 "~" H 2550 5350 50  0001 C CNN
+	1    2550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED48876
+P 2400 5350
+F 0 "#PWR?" H 2400 5100 50  0001 C CNN
+F 1 "GND" V 2405 5222 50  0000 R CNN
+F 2 "" H 2400 5350 50  0001 C CNN
+F 3 "" H 2400 5350 50  0001 C CNN
+	1    2400 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 5350 2850 5350
+Wire Wire Line
+	2850 5350 2850 5300
+Wire Wire Line
+	2850 5350 2850 5400
+Connection ~ 2850 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5ED4A662
+P 2850 6000
+F 0 "#PWR?" H 2850 5750 50  0001 C CNN
+F 1 "GND" H 2855 5827 50  0000 C CNN
+F 2 "" H 2850 6000 50  0001 C CNN
+F 3 "" H 2850 6000 50  0001 C CNN
+	1    2850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED4AD15
+P 3800 6000
+F 0 "C?" H 3915 6046 50  0000 L CNN
+F 1 "47p" H 3915 5955 50  0000 L CNN
+F 2 "" H 3838 5850 50  0001 C CNN
+F 3 "~" H 3800 6000 50  0001 C CNN
+	1    3800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED4B29C
+P 3800 6150
+F 0 "#PWR?" H 3800 5900 50  0001 C CNN
+F 1 "GND" H 3805 5977 50  0000 C CNN
+F 2 "" H 3800 6150 50  0001 C CNN
+F 3 "" H 3800 6150 50  0001 C CNN
+	1    3800 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED4CAED
+P 4250 5950
+F 0 "R?" H 4320 5996 50  0000 L CNN
+F 1 "30k" H 4320 5905 50  0000 L CNN
+F 2 "" V 4180 5950 50  0001 C CNN
+F 3 "~" H 4250 5950 50  0001 C CNN
+	1    4250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED4D09C
+P 3500 5700
+F 0 "R?" V 3293 5700 50  0000 C CNN
+F 1 "20k" V 3384 5700 50  0000 C CNN
+F 2 "" V 3430 5700 50  0001 C CNN
+F 3 "~" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5700 3350 5700
+Wire Wire Line
+	3650 5700 3800 5700
+Wire Wire Line
+	3800 5700 3800 5850
+Wire Wire Line
+	3800 5700 4050 5700
+Wire Wire Line
+	4250 5700 4250 5800
+Connection ~ 3800 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5ED508C1
+P 4250 6150
+F 0 "#PWR?" H 4250 5900 50  0001 C CNN
+F 1 "GND" H 4255 5977 50  0000 C CNN
+F 2 "" H 4250 6150 50  0001 C CNN
+F 3 "" H 4250 6150 50  0001 C CNN
+	1    4250 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6150 4250 6100
+Text HLabel 3200 2250 0    50   Input ~ 0
+PUMP_POWER
+$Comp
+L Device:CP C?
+U 1 1 5ED5206B
+P 3350 2250
+F 0 "C?" V 3605 2250 50  0000 C CNN
+F 1 "100u" V 3514 2250 50  0000 C CNN
+F 2 "" H 3388 2100 50  0001 C CNN
+F 3 "~" H 3350 2250 50  0001 C CNN
+	1    3350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED52E15
+P 3500 2250
+F 0 "#PWR?" H 3500 2000 50  0001 C CNN
+F 1 "GND" V 3505 2122 50  0000 R CNN
+F 2 "" H 3500 2250 50  0001 C CNN
+F 3 "" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4450 5700 2    50   Input ~ 0
+S0
+Wire Wire Line
+	4450 5700 4250 5700
+Connection ~ 4250 5700
+$Comp
+L Device:D D?
+U 1 1 5ED6384A
+P 4050 5550
+F 0 "D?" V 4004 5630 50  0000 L CNN
+F 1 "D" V 4095 5630 50  0000 L CNN
+F 2 "" H 4050 5550 50  0001 C CNN
+F 3 "~" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	0    1    1    0   
+$EndComp
+Connection ~ 4050 5700
+Wire Wire Line
+	4050 5700 4250 5700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5ED640FB
+P 4050 5400
+F 0 "#PWR?" H 4050 5250 50  0001 C CNN
+F 1 "+3.3V" H 4065 5573 50  0000 C CNN
+F 2 "" H 4050 5400 50  0001 C CNN
+F 3 "" H 4050 5400 50  0001 C CNN
+	1    4050 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

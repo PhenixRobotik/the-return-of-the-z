@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -56,12 +56,6 @@ F2 "DIR" I L 7200 2100 50
 F3 "TX" I L 7200 2200 50 
 F4 "RX" I L 7200 2300 50 
 F5 "AX_power" I L 7200 2500 50 
-$EndSheet
-$Sheet
-S 7200 4150 1200 700 
-U 5ED04940
-F0 "pump" 50
-F1 "pump.sch" 50
 $EndSheet
 $Comp
 L PhenixRobotik:Conn_Debug J?
@@ -150,5 +144,27 @@ S 7200 2900 1150 950
 U 5ED04904
 F0 "stepper" 50
 F1 "stepper.sch" 50
+F2 "~RESET" I L 7200 3000 50 
+F3 "~SLEEP" I L 7200 3100 50 
+F4 "~ENABLE" I L 7200 3200 50 
+F5 "STEP" I L 7200 3350 50 
+F6 "DIR" I L 7200 3450 50 
+F7 "STEPPER_POWER" I L 7200 3750 50 
+$EndSheet
+$Sheet
+S 5650 5350 1250 800 
+U 5ED6716D
+F0 "color" 50
+F1 "color.sch" 50
+$EndSheet
+$Sheet
+S 7200 4150 1150 750 
+U 5ED04940
+F0 "pump" 50
+F1 "pump.sch" 50
+F2 "PUMP_POWER" I L 7200 4750 50 
+F3 "P0" I L 7200 4250 50 
+F4 "V0" I L 7200 4350 50 
+F5 "S0" I L 7200 4450 50 
 $EndSheet
 $EndSCHEMATC
