@@ -243,4 +243,92 @@ F5 "+3V3" I R 1600 2700 50
 F6 "+5V" I R 1600 2800 50 
 F7 "NRST" I R 1600 2350 50 
 $EndSheet
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5ED6EE13
+P 5200 5900
+F 0 "H2" V 5154 6050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5245 6050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5200 5900 50  0001 C CNN
+F 3 "~" H 5200 5900 50  0001 C CNN
+	1    5200 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5ED6F21F
+P 5200 5700
+F 0 "H1" V 5154 5850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5245 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5200 5700 50  0001 C CNN
+F 3 "~" H 5200 5700 50  0001 C CNN
+	1    5200 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5ED6FB0B
+P 5200 6100
+F 0 "H3" V 5154 6250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5245 6250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5200 6100 50  0001 C CNN
+F 3 "~" H 5200 6100 50  0001 C CNN
+	1    5200 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5ED6FCF6
+P 5200 6300
+F 0 "H4" V 5154 6450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5245 6450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 5200 6300 50  0001 C CNN
+F 3 "~" H 5200 6300 50  0001 C CNN
+	1    5200 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0218
+U 1 1 5ED6FFF7
+P 5100 5700
+F 0 "#PWR0218" H 5100 5450 50  0001 C CNN
+F 1 "GND" V 5105 5572 50  0000 R CNN
+F 2 "" H 5100 5700 50  0001 C CNN
+F 3 "" H 5100 5700 50  0001 C CNN
+	1    5100 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0219
+U 1 1 5ED7046C
+P 5100 5900
+F 0 "#PWR0219" H 5100 5650 50  0001 C CNN
+F 1 "GND" V 5105 5772 50  0000 R CNN
+F 2 "" H 5100 5900 50  0001 C CNN
+F 3 "" H 5100 5900 50  0001 C CNN
+	1    5100 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0220
+U 1 1 5ED705DF
+P 5100 6100
+F 0 "#PWR0220" H 5100 5850 50  0001 C CNN
+F 1 "GND" V 5105 5972 50  0000 R CNN
+F 2 "" H 5100 6100 50  0001 C CNN
+F 3 "" H 5100 6100 50  0001 C CNN
+	1    5100 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0221
+U 1 1 5ED70737
+P 5100 6300
+F 0 "#PWR0221" H 5100 6050 50  0001 C CNN
+F 1 "GND" V 5105 6172 50  0000 R CNN
+F 2 "" H 5100 6300 50  0001 C CNN
+F 3 "" H 5100 6300 50  0001 C CNN
+	1    5100 6300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
