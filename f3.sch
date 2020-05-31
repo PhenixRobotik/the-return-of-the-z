@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 15
+Sheet 7 15
 Title ""
 Date ""
 Rev ""
@@ -357,7 +357,7 @@ U 1 1 5ED4364C
 P 4650 2750
 F 0 "J14" H 4568 2525 50  0000 C CNN
 F 1 "Conn_free" H 4568 2616 50  0000 C CNN
-F 2 "" H 4650 2750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4650 2750 50  0001 C CNN
 F 3 "~" H 4650 2750 50  0001 C CNN
 	1    4650 2750
 	-1   0    0    1   
