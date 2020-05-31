@@ -22,7 +22,7 @@ AR Path="/5B230D4C/5B231012" Ref="J7"  Part="1"
 AR Path="/5ECF49A0/5B231012" Ref="J2"  Part="1" 
 F 0 "J2" H 6900 2350 50  0000 C CNN
 F 1 "CAN_conn" H 6600 2350 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 6700 1700 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 6700 1700 50  0001 C CNN
 F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7000 2050 50  0001 C CNN
 	1    6700 2050
 	1    0    0    -1  
@@ -70,7 +70,7 @@ AR Path="/5B230D4C/5BADEF26" Ref="J8"  Part="1"
 AR Path="/5ECF49A0/5BADEF26" Ref="J3"  Part="1" 
 F 0 "J3" H 7600 2350 50  0000 L CNN
 F 1 "CAN_conn" H 7150 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 7600 1700 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7600 1700 50  0001 C CNN
 F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7899 1959 50  0001 L CNN
 	1    7450 2050
 	1    0    0    -1  

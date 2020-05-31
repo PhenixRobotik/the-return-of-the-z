@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name sensors)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/sensors.pretty)(options "")(descr ""))
+)

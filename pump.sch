@@ -214,7 +214,7 @@ U 1 1 5ED45D58
 P 2850 5700
 F 0 "U6" H 2421 5746 50  0000 R CNN
 F 1 "MPXA6115A" H 2421 5655 50  0000 R CNN
-F 2 "" H 2350 5350 50  0001 C CNN
+F 2 "sensors:MPXA6115A" H 2350 5350 50  0001 C CNN
 F 3 "http://www.nxp.com/files/sensors/doc/data_sheet/MPXA6115A.pdf" H 2850 6300 50  0001 C CNN
 	1    2850 5700
 	1    0    0    -1  
