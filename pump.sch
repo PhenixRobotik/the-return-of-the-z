@@ -209,17 +209,6 @@ P0
 Text HLabel 1450 4400 0    50   Input ~ 0
 V0
 $Comp
-L Sensor_Pressure:MPXA6115A U6
-U 1 1 5ED45D58
-P 2850 5700
-F 0 "U6" H 2421 5746 50  0000 R CNN
-F 1 "MPXA6115A" H 2421 5655 50  0000 R CNN
-F 2 "sensors:MPXA6115A" H 2350 5350 50  0001 C CNN
-F 3 "http://www.nxp.com/files/sensors/doc/data_sheet/MPXA6115A.pdf" H 2850 6300 50  0001 C CNN
-	1    2850 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0179
 U 1 1 5ED47B0A
 P 2850 5300
@@ -390,6 +379,17 @@ F 1 "+3.3V" H 4065 5573 50  0000 C CNN
 F 2 "" H 4050 5400 50  0001 C CNN
 F 3 "" H 4050 5400 50  0001 C CNN
 	1    4050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PhenixRobotik:MPX5500DP U6
+U 1 1 5EDD3FCB
+P 2850 5700
+F 0 "U6" H 2421 5746 50  0000 R CNN
+F 1 "MPX5500DP" H 2421 5655 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2350 5350 50  0001 C CNN
+F 3 "http://www.nxp.com/files/sensors/doc/data_sheet/MPXA6115A.pdf" H 2850 6300 50  0001 C CNN
+	1    2850 5700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -148,7 +148,7 @@ U 1 1 5ED0CF4F
 P 4650 3450
 F 0 "JP3" H 4650 3635 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 4650 3544 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4650 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4650 3450 50  0001 C CNN
 F 3 "~" H 4650 3450 50  0001 C CNN
 	1    4650 3450
 	1    0    0    -1  
@@ -159,7 +159,7 @@ U 1 1 5ED0D4A8
 P 4100 3350
 F 0 "JP2" H 4100 3535 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 4100 3444 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4100 3350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 3350 50  0001 C CNN
 F 3 "~" H 4100 3350 50  0001 C CNN
 	1    4100 3350
 	1    0    0    -1  
@@ -170,7 +170,7 @@ U 1 1 5ED0D93A
 P 3550 3250
 F 0 "JP1" H 3550 3435 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 3550 3344 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3550 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 3250 50  0001 C CNN
 F 3 "~" H 3550 3250 50  0001 C CNN
 	1    3550 3250
 	1    0    0    -1  
