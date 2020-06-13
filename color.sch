@@ -96,7 +96,7 @@ Text HLabel 4900 2800 0    50   Input ~ 0
 S2
 Text HLabel 3600 2900 0    50   Input ~ 0
 S3
-Text HLabel 7650 3000 0    50   Input ~ 0
+Text HLabel 7650 3000 0    50   Output ~ 0
 OUT
 Text HLabel 6200 3100 0    50   Input ~ 0
 LED

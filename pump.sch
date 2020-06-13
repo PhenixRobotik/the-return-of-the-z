@@ -351,7 +351,7 @@ F 3 "" H 3500 2250 50  0001 C CNN
 	1    3500 2250
 	0    -1   -1   0   
 $EndComp
-Text HLabel 4450 5700 2    50   Input ~ 0
+Text HLabel 4450 5700 2    50   Output ~ 0
 S0
 Wire Wire Line
 	4450 5700 4250 5700

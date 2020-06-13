@@ -222,11 +222,11 @@ Wire Wire Line
 	4400 1700 4400 1600
 Text Notes 4250 2150 0    50   ~ 0
 internal pull-up
-Text HLabel 5950 3250 2    50   Input ~ 0
+Text HLabel 5950 3250 2    50   Output ~ 0
 CAN_TX
 Text HLabel 5950 3150 2    50   Input ~ 0
 CAN_RX
-Text HLabel 4850 3450 0    50   Input ~ 0
+Text HLabel 4850 3450 0    50   Output ~ 0
 TX_1
 Text HLabel 4850 3550 0    50   Input ~ 0
 RX_1
@@ -317,9 +317,9 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5450 2750
 	1    0    0    -1  
 $EndComp
-Text HLabel 4850 3350 0    50   Input ~ 0
+Text HLabel 4850 3350 0    50   Output ~ 0
 DIR
-Text HLabel 4850 3150 0    50   Input ~ 0
+Text HLabel 4850 3150 0    50   Output ~ 0
 TX_AX
 Text HLabel 4850 3250 0    50   Input ~ 0
 RX_AX
@@ -327,29 +327,29 @@ Text HLabel 5950 2750 2    50   Input ~ 0
 FC_D
 Text HLabel 5950 2650 2    50   Input ~ 0
 FC_T
-Text HLabel 4850 3050 0    50   Input ~ 0
+Text HLabel 4850 3050 0    50   Output ~ 0
 ~enable
-Text HLabel 5950 2850 2    50   Input ~ 0
+Text HLabel 5950 2850 2    50   Output ~ 0
 TIM1_CH1
-Text HLabel 4850 2950 0    50   Input ~ 0
+Text HLabel 4850 2950 0    50   Output ~ 0
 stepper_dir
-Text HLabel 5950 2950 2    50   Input ~ 0
+Text HLabel 5950 2950 2    50   Output ~ 0
 TIM1_CH2
-Text HLabel 5950 3050 2    50   Input ~ 0
+Text HLabel 5950 3050 2    50   Output ~ 0
 TIM1_CH3
 Text HLabel 5950 2150 2    50   Input ~ 0
 ADC1_IN2
 Text HLabel 5950 2050 2    50   Input ~ 0
 TIM2_ETR
-Text HLabel 5950 2250 2    50   Input ~ 0
+Text HLabel 5950 2250 2    50   Output ~ 0
 S0
-Text HLabel 5950 2350 2    50   Input ~ 0
+Text HLabel 5950 2350 2    50   Output ~ 0
 S1
-Text HLabel 5950 2450 2    50   Input ~ 0
+Text HLabel 5950 2450 2    50   Output ~ 0
 S2
-Text HLabel 5950 2550 2    50   Input ~ 0
+Text HLabel 5950 2550 2    50   Output ~ 0
 S3
-Text HLabel 5950 3550 2    50   Input ~ 0
+Text HLabel 5950 3550 2    50   Output ~ 0
 color_led
 $Comp
 L Connector_Generic:Conn_01x01 J14
@@ -362,4 +362,6 @@ F 3 "~" H 4650 2750 50  0001 C CNN
 	1    4650 2750
 	-1   0    0    1   
 $EndComp
+Text Notes 4550 3250 2    50   ~ 0
+USART2
 $EndSCHEMATC

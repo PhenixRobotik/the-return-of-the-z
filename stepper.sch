@@ -374,8 +374,8 @@ F 3 "" H 9200 5050 50  0001 C CNN
 $EndComp
 Text Notes 5850 1600 0    50   ~ 0
 8V to 35V
-Text HLabel 7350 4700 1    50   Input ~ 0
+Text HLabel 7350 4700 1    50   Output ~ 0
 FC_D
-Text HLabel 8950 4700 1    50   Input ~ 0
+Text HLabel 8950 4700 1    50   Output ~ 0
 FC_T
 $EndSCHEMATC

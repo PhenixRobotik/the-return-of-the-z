@@ -17,7 +17,7 @@ Text HLabel 3800 2500 0    50   Input ~ 0
 DIR
 Text HLabel 3800 3350 0    50   Input ~ 0
 TX
-Text HLabel 3800 3600 0    50   Input ~ 0
+Text HLabel 3800 3600 0    50   Output ~ 0
 RX
 $Comp
 L Transistor_FET:BSS138 Q3
@@ -595,6 +595,19 @@ Wire Wire Line
 Connection ~ 7050 3850
 Text Notes 8400 3550 0    50   ~ 0
 9V to 12V
+Text HLabel 9050 2700 0    50   Input ~ 0
+AX_power
+$Comp
+L power:GND #PWR01
+U 1 1 5ED65C94
+P 9350 2700
+F 0 "#PWR01" H 9350 2450 50  0001 C CNN
+F 1 "GND" V 9355 2572 50  0000 R CNN
+F 2 "" H 9350 2700 50  0001 C CNN
+F 3 "" H 9350 2700 50  0001 C CNN
+	1    9350 2700
+	0    -1   -1   0   
+$EndComp
 $Comp
 L Device:CP C?
 U 1 1 5ED64D3B
@@ -608,17 +621,4 @@ F 3 "~" H 9200 2700 50  0001 C CNN
 	1    9200 2700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5ED65C94
-P 9350 2700
-F 0 "#PWR01" H 9350 2450 50  0001 C CNN
-F 1 "GND" V 9355 2572 50  0000 R CNN
-F 2 "" H 9350 2700 50  0001 C CNN
-F 3 "" H 9350 2700 50  0001 C CNN
-	1    9350 2700
-	0    -1   -1   0   
-$EndComp
-Text HLabel 9050 2700 0    50   Input ~ 0
-AX_power
 $EndSCHEMATC

@@ -53,7 +53,7 @@ Wire Wire Line
 	4850 2600 4850 2450
 Wire Wire Line
 	4850 1400 4850 1550
-Text HLabel 4350 1950 0    50   Input ~ 0
+Text HLabel 4350 1950 0    50   Output ~ 0
 RX_CAN
 Text HLabel 3750 1850 0    50   Input ~ 0
 TX_CAN
